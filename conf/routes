@@ -1,1 +1,7 @@
 GET         /                           controllers.HomeController.index
+
+GET         /tasks                      controllers.TaskController.listAll
+POST        /tasks/add                  controllers.TaskController.add
+GET         /tasks/:id                  controllers.TaskController.get(id:Long)
+PATCH       /tasks/:id/update           controllers.TaskController.update(id:Long)
+DELETE      /tasks/:id/delete           controllers.TaskController.delete(id:Long)
